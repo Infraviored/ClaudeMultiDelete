@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "ClaudeMultiDelete",
+  "version": "1.2",
+  "description": "Batch-Select Project Items in Claude, and delete all with a single Button press",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.anthropic.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

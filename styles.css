@@ -1,0 +1,60 @@
+.delete-checkbox {
+  margin-left: 10px;
+  z-index: 9999;
+  align-self: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-family: 'Styrene', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+  min-width: 5rem;
+  transition: all 0.2s;
+  background-size: 200% 100%;
+  background-position: left center;
+  border: 0.5px solid var(--border-300, #e0e0e0);
+  color: var(--oncolor-100, #ffffff);
+  box-shadow: inset 0 0.5px 0px rgba(255, 255, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.action-button:hover {
+  background-position: right center;
+}
+
+.action-button:active {
+  transform: scale(0.985);
+  box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button {
+  background-image: linear-gradient(to right, var(--accent-main-100, #ff4d4d), var(--accent-main-200, #ff6666) 50%, var(--accent-main-200, #ff6666));
+}
+
+.delete-button:hover {
+  background-image: linear-gradient(to right, var(--accent-main-200, #ff6666), var(--accent-main-200, #ff6666));
+}
+
+.deselect-button {
+  background-image: linear-gradient(to right, var(--accent-secondary-100, #4d4dff), var(--accent-secondary-200, #6666ff) 50%, var(--accent-secondary-200, #6666ff));
+}
+
+.deselect-button:hover {
+  background-image: linear-gradient(to right, var(--accent-secondary-200, #6666ff), var(--accent-secondary-200, #6666ff));
+}
